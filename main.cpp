@@ -129,7 +129,7 @@ bool checkAnyBlackPointInCircleR(Point center, Mat& M, int step)
 			num++;
 
 	
-	if(num > 3)
+	if(num > 5)
 		return 1;
 	
 	else
@@ -170,14 +170,14 @@ bool checkValidLine_longitude(vector<Segment>& vS, Triple& ret, Mat& img, int ro
 		{		
 
 
-			int drift=meanLength*2;
-			int step=meanLength;
+			int drift=meanLength/2;
+			int step=meanLength/2;
 
 			Point firststart(vS.at(i).startpos-drift, row);
 
 			
 			
-			if( checkAnyBlackPointInCircleR(firststart, img, step) ==0    )//add first in startpos and  last out pos constraints
+			if(checkAnyBlackPointInCircleR(firststart, img, step) ==0    )//add first in startpos and  last out pos constraints
 	
 			{
 				cout<<"one valid doubleline triple detected!"<<endl;
@@ -233,7 +233,7 @@ bool checkValidLine_vertical(vector<Segment>& vS, Triple& ret, Mat& img, int row
 		{		
 
 
-			int drift=meanLength*2;
+			int drift=meanLength;
 			int step=meanLength;
 
 			Point firststart(col, vS.at(i).startpos-drift);
@@ -388,8 +388,7 @@ int j;
 													cout<<"row="<<i<<endl;
 													cout<<"-------"<<endl;
 													successnum++;
-													
-//line(bina,Point(0,i), Point(bina.cols, i), Scalar(0,255,0), thickness, linetype);
+
 												
 												}
 
@@ -428,15 +427,60 @@ for(int ii=0;ii<vMid.size()-1;ii++)
 			min_dist=dist[ii];
 	}
 
+Cluster temp_cluster={0,0}; 
+Cluster biggest_cluster={0,0};
+
+double cluster_threshold=3; // at least 8 lines bundle
+
+vector<Cluster>vClu;
 
 
+int fflag_first=1;
 for(int ii=0;ii<vMid.size()-1;ii++)
 	{
 		if(dist[ii]<(min_dist+5))
+		{
+			if(temp_cluster.length ==0)
 			{
-				vMid_cluster.push_back(vMid.at(ii));
-line(bina,Point(0,vMid_cluster.back().y), Point(bina.cols, vMid_cluster.back().y), Scalar(0,255,0), thickness, linetype);
+				temp_cluster.start=ii;
 			}
+			
+			temp_cluster.length++;	
+
+			if(ii==vMid.size()-1-1)
+				if(temp_cluster.length > cluster_threshold)
+						{
+							vClu.push_back(temp_cluster);
+						}	
+		}
+
+		else
+			if(temp_cluster.length>0)
+				{	
+					if(temp_cluster.length > cluster_threshold)
+						{
+							vClu.push_back(temp_cluster);
+						}
+
+					temp_cluster.length=0;
+				}
+				
+			
+	}
+
+
+
+
+
+
+
+for (int jj=0;jj<vClu.size();jj++)
+	for(int ii=vClu.at(jj).start;ii< vClu.at(jj).start + vClu.at(jj).length;ii++)
+	{
+		
+				vMid_cluster.push_back(vMid.at(ii));
+line(bina,Point(0,vMid_cluster.back().y), Point( bina.cols,vMid_cluster.back().y), Scalar(0,255,0), thickness, linetype);
+			
 	}
 
 
@@ -445,7 +489,7 @@ line(bina,Point(0,vMid_cluster.back().y), Point(bina.cols, vMid_cluster.back().y
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 																
-//line(bina,vMid.at(0), vMid.at(vMid.size()-1), Scalar(255,255,255),thickness,linetype);		
+//line(bina,vMid_cluster.at(0), vMid_cluster.at(vMid_cluster.size()-1), Scalar(255,255,255),thickness,linetype);		
 
 imshow("Middle line", bina);
 
@@ -602,7 +646,7 @@ int j;
 													cout<<"-------"<<endl;
 													successnum++;
 													
-//line(bina,Point(j,0), Point(j,bina.rows), Scalar(0,255,0), thickness, linetype);
+
 												
 												}
 
@@ -651,6 +695,12 @@ for(int ii=0;ii<vMid.size()-1;ii++)
 Cluster temp_cluster={0,0}; 
 Cluster biggest_cluster={0,0};
 
+double cluster_threshold=3; // at least 8 lines bundle
+
+vector<Cluster>vClu;
+
+
+
 int fflag_first=1;
 for(int ii=0;ii<vMid.size()-1;ii++)
 	{
@@ -664,18 +714,18 @@ for(int ii=0;ii<vMid.size()-1;ii++)
 			temp_cluster.length++;	
 
 			if(ii==vMid.size()-1-1)
-				if(temp_cluster.length > biggest_cluster.length)
+				if(temp_cluster.length > cluster_threshold)
 						{
-							biggest_cluster=temp_cluster;
+							vClu.push_back(temp_cluster);
 						}	
 		}
 
 		else
 			if(temp_cluster.length>0)
 				{	
-					if(temp_cluster.length > biggest_cluster.length)
+					if(temp_cluster.length > cluster_threshold)
 						{
-							biggest_cluster=temp_cluster;
+							vClu.push_back(temp_cluster);
 						}
 
 					temp_cluster.length=0;
@@ -686,8 +736,8 @@ for(int ii=0;ii<vMid.size()-1;ii++)
 
 
 
-
-for(int ii=biggest_cluster.start;ii<biggest_cluster.start+biggest_cluster.length;ii++)
+for (int jj=0;jj<vClu.size();jj++)
+	for(int ii=vClu.at(jj).start;ii< vClu.at(jj).start + vClu.at(jj).length;ii++)
 	{
 		
 				vMid_cluster.push_back(vMid.at(ii));
@@ -708,7 +758,7 @@ line(bina,Point(vMid_cluster.back().x,0), Point( vMid_cluster.back().x,bina.rows
 
 
 																
-//line(bina,vMid.at(5), vMid.at(vMid.size()-1), Scalar(255,255,255),thickness,linetype);		
+//line(bina,vMid_cluster.at(0), vMid_cluster.at(vMid_cluster.size()-1), Scalar(255,255,255),thickness,linetype);		
 
 imshow("Middle line", bina);
 
@@ -740,6 +790,9 @@ imwrite("Midline.jpg",bina);
 
 
 
+#include<stdio.h>
+#include<sys/time.h>
+#include<unistd.h>
 
 
 
@@ -752,7 +805,7 @@ imwrite("Midline.jpg",bina);
 int main()
 {
 
-											Mat raw=imread("recrec10_800.jpg",0);
+											Mat raw=imread("recrec_two2.jpg",0);
 
 											imshow("raw",raw);
 										
@@ -763,7 +816,7 @@ int main()
 
 cout<<"----------------------------------binarized--------------------------------"<<endl;
 										
-											threshold( raw, bina, 140, 255,CV_THRESH_BINARY);
+											threshold( raw, bina, 160, 255,CV_THRESH_BINARY);
 	
 											
 											imshow("binarized",bina);
@@ -788,6 +841,14 @@ cout<<"--------------------------------- Add line-------------------------------
 
 
 cout<<"------------------------------------------------------------------"<<endl;
+//=====================measure time =========
+struct timeval st, en;
+gettimeofday( &st, NULL );
+printf("start : %d s  and %d us \n", st.tv_sec, st.tv_usec);
+
+
+//=====================end of measure time ======
+
 					
 											longitudeScan(bina);												
 											//}											
@@ -795,6 +856,19 @@ cout<<"------------------------------------------------------------------"<<endl
 											verticalScan(bina);
 
 
+
+
+//=====================measure time =========
+
+gettimeofday( &en, NULL );
+printf("end : %d.%d \n", en.tv_sec, en.tv_usec);
+
+
+double delta_time=en.tv_sec-st.tv_sec+  (en.tv_usec - st.tv_usec)*0.000001;
+
+cout<<"delta_time="<<delta_time<<endl;
+
+//=====================end of measure time ======
 
 											vector<Segment>vLineSeg;
 
