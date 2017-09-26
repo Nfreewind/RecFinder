@@ -1,0 +1,372 @@
+----------------------------------binarized--------------------------------
+----------------------------------binarized end--------------------------------
+--------------------------------- Add line---------------------------------
+------------------------------------------------------------------
+start : 1506397346 s  and 26996 us 
+-------------------------------Longitude Scan-----------------------------------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=470     right=522
+Middle=[501, 125]
+row=125
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=469     right=521
+Middle=[500, 126]
+row=126
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=469     right=521
+Middle=[500, 127]
+row=127
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=2   ret.right=4
+Left=468     right=520
+Middle=[499, 128]
+row=128
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=468     right=520
+Middle=[499, 129]
+row=129
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=467     right=519
+Middle=[498, 130]
+row=130
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=3   ret.right=5
+Left=467     right=519
+Middle=[498, 131]
+row=131
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=2   ret.right=4
+Left=466     right=518
+Middle=[497, 132]
+row=132
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=2   ret.right=4
+Left=465     right=518
+Middle=[497, 133]
+row=133
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=3   ret.right=5
+Left=465     right=517
+Middle=[496, 134]
+row=134
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=2   ret.right=4
+Left=388     right=439
+Middle=[418, 171]
+row=171
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=2   ret.right=4
+Left=388     right=439
+Middle=[418, 172]
+row=172
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=370     right=426
+Middle=[403, 298]
+row=298
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=370     right=425
+Middle=[402, 299]
+row=299
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=2   ret.right=4
+Left=369     right=425
+Middle=[402, 300]
+row=300
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=2   ret.right=4
+Left=369     right=424
+Middle=[401, 301]
+row=301
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=1   ret.right=3
+Left=368     right=423
+Middle=[401, 302]
+row=302
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=1   ret.right=3
+Left=368     right=423
+Middle=[400, 303]
+row=303
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=2   ret.right=4
+Left=366     right=422
+Middle=[399, 305]
+row=305
+-------
+success num=19
+all middle are---------
+[501, 125]
+[500, 126]
+[500, 127]
+[499, 128]
+[499, 129]
+[498, 130]
+[498, 131]
+[497, 132]
+[497, 133]
+[496, 134]
+[418, 171]
+[418, 172]
+[403, 298]
+[402, 299]
+[402, 300]
+[401, 301]
+[401, 302]
+[400, 303]
+[399, 305]
+
+dist[0]1
+dist[1]1
+dist[2]1
+dist[3]1
+dist[4]1
+dist[5]1
+dist[6]1
+dist[7]1
+dist[8]1
+dist[9]37
+dist[10]1
+dist[11]126
+dist[12]1
+dist[13]1
+dist[14]1
+dist[15]1
+dist[16]1
+dist[17]2
+vMid.size()=19
+vClu.size()=2
+long success
+-------------------------------Vertical Scan-----------------------------------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=4   ret.right=6
+Left=267     right=322
+Middle=[397, 299]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=4   ret.right=6
+Left=268     right=324
+Middle=[399, 301]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=4   ret.right=6
+Left=268     right=324
+Middle=[400, 301]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=4   ret.right=6
+Left=269     right=325
+Middle=[401, 302]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=6   ret.right=8
+Left=270     right=325
+Middle=[402, 302]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=6   ret.right=8
+Left=270     right=326
+Middle=[403, 303]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=11
+ret.left=4   ret.right=6
+Left=271     right=326
+Middle=[404, 303]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=98     right=149
+Middle=[495, 128]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=99     right=150
+Middle=[496, 129]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=100     right=151
+Middle=[498, 130]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=100     right=151
+Middle=[499, 130]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=101     right=151
+Middle=[500, 131]
+row=480
+-------
+one valid doubleline triple detected!
+meanLength=10
+ret.left=1   ret.right=3
+Left=101     right=152
+Middle=[501, 131]
+row=480
+-------
+success num=13
+all middle are---------
+[397, 299]
+[399, 301]
+[400, 301]
+[401, 302]
+[402, 302]
+[403, 303]
+[404, 303]
+[495, 128]
+[496, 129]
+[498, 130]
+[499, 130]
+[500, 131]
+[501, 131]
+
+dist in vertical scan 0=  2
+dist in vertical scan 1=  1
+dist in vertical scan 2=  1
+dist in vertical scan 3=  1
+dist in vertical scan 4=  1
+dist in vertical scan 5=  1
+dist in vertical scan 6=  91
+dist in vertical scan 7=  1
+dist in vertical scan 8=  2
+dist in vertical scan 9=  1
+dist in vertical scan 10=  1
+dist in vertical scan 11=  1
+vertical vClu.size()=2
+vClu.at(0).length=7
+vClu.at(1).length=6
+vClu.at(0).start=0
+vClu.at(1).start=7
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^fuck
+vClu.size()=2
+0  vMid.at(vClu.at(jj).start)=[397, 299]
+1  vMid.at(vClu.at(jj).start)=[495, 128]
+line.startp=[501, 125]  line.endp=[496, 134]
+line.startp=[403, 298]  line.endp=[399, 305]
+line.startp=[397, 299]  line.endp=[404, 303]
+line.startp=[495, 128]  line.endp=[501, 131]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten four line segments.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten four line segments.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten four line segments.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten four line segments.^^^^^^^^^^^^^^^^^^^^
+ b_l1_v1=0
+p_l1_v1=[402.566, 302.181]
+b_l1_v2=1
+p_l1_v2=[498.391, 129.696]
+b_l2_v1=1
+p_l2_v1=[401.092, 301.338]
+b_l2_v2=0
+p_l2_v2=[499, 130]
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   center we got it! $$$$$$$$$$
+center1=[498.391, 129.696]
+center2=[401.092, 301.338]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten two centers.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten two centers.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten two centers.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least, we have gotten two centers.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  begin to judge which is left center  -------
+check matches and center2=   [401.092, 301.338]  is left center
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know who is the left center.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know who the left center.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know who the left center.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know who the left center.^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  begin to get orthogonal step vec -------
+step_vec_orthogonal=[-8.17347, -4.63329]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know orthogonal stepsize vector and in right direction(Barcode Reference y axis).^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know orthogonal stepsize vector and in right direction(Barcode Reference y axis).^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know orthogonal stepsize vector and in right direction(Barcode Reference y axis).^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^up to now, at least,we know orthogonal stepsize vector and in right direction(Barcode Reference y axis).^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  begin to calculate all the 0s and 1s -------
+decodeResult=[0, 218, 252, 92, 201, 113, 119, 61, 194, 220;
+  60, 178, 109, 153, 148, 186, 75, 24, 104, 95;
+  246, 59, 246, 83, 255, 0, 130, 241, 127, 193;
+  31, 191, 224, 186, 254, 21, 211, 255, 0, 98;
+  95, 219, 159, 224, 54, 159, 225, 111, 21, 248;
+  171, 80, 251, 22, 141, 224, 95, 136, 113, 38;
+  165, 166, 95, 106, 51, 165, 237, 188, 77, 164;
+  235, 17, 199, 25, 182, 190, 22, 236, 17, 38;
+  116, 178, 184, 19, 223, 44, 54, 173, 51, 157;
+  199, 196, 63, 110, 159, 248, 50, 163, 192, 158]
+==========================fuck out the final fuck up 0s and 1s ============================================
+decodeResult=
+[1, 1, 1, 0, 1, 1, 0, 1, 1, 0;
+  0, 1, 0, 1, 1, 0, 1, 1, 0, 1;
+  0, 0, 0, 1, 1, 0, 0, 1, 1, 1;
+  0, 1, 0, 0, 0, 1, 1, 0, 0, 0;
+  0, 0, 1, 0, 0, 1, 1, 1, 1, 1;
+  0, 1, 0, 1, 0, 1, 1, 0, 1, 1;
+  1, 1, 1, 1, 1, 0, 0, 0, 1, 1;
+  1, 0, 1, 1, 1, 1, 1, 0, 0, 0;
+  1, 1, 1, 0, 1, 1, 0, 0, 1, 1;
+  0, 1, 1, 0, 1, 1, 1, 1, 1, 1]
